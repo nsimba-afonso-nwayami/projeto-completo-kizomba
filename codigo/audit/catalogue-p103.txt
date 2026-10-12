@@ -1,0 +1,38 @@
+4
+ Addressable fi  re control network participants 
+ Cerberus 0obile 
+   
+4-47
+ Siemens Switzerland Ltd © 2018       
+ Cerberus 0obile 
+2rder 1o. Product 1o.
+S4400P16A1 )CAA
+ Cerberus 0obile 
+ :ith Cerberus Mobile, customers can access their Cerberus P52 fi  re protection system from around the 
+globe via 8MTS connection, using a mobile device. 
+The app offers the same full view, full control and full commands as the fi  re control terminal. It provides 
+realtime information and enables mobile intervention management. Cerberus Mobile is ideal for securi
+ty offi  cers, end customers and facility managers.
+)eatures and Iunctions
+- Display and fi  ltering of notifi  cations by category
+- Commands can be entered depending on the selected E1 4 access level, e.g. ´Enable Disableµ ]ones, 
+controls.
+- Categories for notifi  cation can be confi  gured in foreground or background.
+- 1otifi  cation sound for alarms can be confi  gured.
+- Control buttons, ´Confi  rmµ, ´5esetµ, ´Acoustic signalsµ and ´Alarm delay offµ are available, depending 
+on access level.
+Security requirements 
+Cerberus Mobile is used to establish an IP connection to the fi  re detection system. If the connection 
+between the F720 system and Cerberus Mobile is made across public networks, then a connection must 
+be installed to the Internet. 
+Therefore, the following security guidelines must be observed
+- A 9P1 tunnel is to be used for a safe connection.
+- The mobile devices are to be individually approved using their IMEI numbers International Mobile 
+Station ETuipment Identity.
+(xpansion 
+In order to use the app with the fi  re control panel, the license key S3 is reTuired. 2nly one license key is 
+reTuired per system. 
+Availability 
+Available via *oogle Play Store for smartphone and tablet. 
+Android operating system version 4.1 or later.         
+04_Addressable_fire_control_network_participants.indd   47 08.08.17   08:44

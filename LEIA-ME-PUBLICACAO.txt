@@ -1,0 +1,17 @@
+PROJETO KIZOMBA - PUBLICAÇÃO EM DOMÍNIO
+Versão: 11 de outubro de 2026
+
+PUBLICAR
+Extraia o ZIP. Envie os ficheiros da raiz (index.html, ficheiros JS, imagens e documentos) para a pasta pública do domínio, mantendo os nomes e caminhos. Não publique a pasta codigo nem MANIFESTO-SHA256.json; guarde-os para manutenção técnica. Use HTTPS. A raiz contém o frontend actualizado com entidades das residências.
+
+FUNCIONAMENTO
+A aplicação funciona como site estático. Os registos são guardados no armazenamento local do navegador; não são sincronizados entre computadores. Utilize as funções de exportação/importação para transportar registos. Não estão incluídos registos privados do navegador deste computador.
+
+INTEGRAÇÃO
+A pasta codigo contém o serviço local Python READ_ONLY, diagnóstico, importação de capturas, testes e configuração de exemplo. Consulte codigo/integration/README.md. Não publique este serviço directamente na Internet. A monitorização Siemens real ainda não foi validada; publicar o frontend não estabelece comunicação com as centrais. Os comandos remotos permanecem desactivados. Não foram incluídos tokens, PIN, bases de dados de execução nem capturas privadas.
+
+MANUTENÇÃO
+codigo/kizomba-site/dist contém os fontes do frontend. codigo/package-platform.py produz uma versão HTML autónoma a partir de work/kizomba-site/dist numa estrutura equivalente ao projecto original. Os restantes scripts são utilitários de manutenção do projecto original; não são necessários no alojamento web.
+
+PRAZO
+Este ZIP não impõe prazo de cinco dias. A publicação e a retirada do domínio ficam sob controlo do responsável pelo alojamento.

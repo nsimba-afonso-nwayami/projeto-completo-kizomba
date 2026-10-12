@@ -1,0 +1,46 @@
+Addressable fire control network participants
+)Cx networkable and modular fire control panels
+(xpansion )Cx
+4-22
+Siemens Switzerland Ltd © 2018   
+4
+2rder 1o. Product 1o.
+S4400A20A1 )C,A
+)C,A
+ ,2 card R7
+For the transmission of alarms and faults. The card is mounted in the card cage of the fire control panel 
+modular.
+2x monitored outputs for 5T alarm  horns
+1x relay output 5T alarm
+1x monitored output 5T fault
+1x relay output 5T fault
+2x I2
+Exchange of defective cards possible during operation hot plug
+Data sheet A6910263277
+2rder 1o. Product 1o.
+S4400A6A1 )C,A
+)C,A
+ ,2 card programmable
+The I2 card is an additional card with programmable inputs and outputs for expansion of the integrated 
+inputs and outputs. The card is mounted in the card cage of the fire control panel modular.
+Programmable inputoutput 12
+Input current Max. 2 A
+2rder 1o. Product 1o.
+S4400A21A1 )C,A
+)C,A
+ ,2 card hornmonitored
+For 8 monitored horn lines or monitored outputs. The card is mounted in the card cage of the fire control 
+panel modular.
+8x monitored outputs, configurable as supervised horn outputs  flashing lights or fire controls. 
+Max. 2 A  output
+Max. 4 A  card
+Exchange of defective cards possible during operation hot plug.
+2rder 1o. Product 1o.
+S4400P14A1 )CAA
+)CAA
+ /icense key S
+iButton with license for
+Sinteso ! Sinteso9iew and BACnet to 3rd party supervision only
+Cerberus P52 ! Cerberus5emote and BACnet to 3rd party supervision only
+2ne license key is reTuired per station.
+04_Addressable_fire_control_network_participants.indd   22 08.08.17   08:44

@@ -1,0 +1,363 @@
+{
+  "stations": [
+    {
+      "id": "SADI 1",
+      "location": "Guarita Social 2",
+      "loops": [
+        {
+          "n": 1,
+          "houses": [
+            "A19",
+            "A20",
+            "A21",
+            "A22",
+            "A23",
+            "A24",
+            "A25",
+            "A26"
+          ],
+          "common": []
+        },
+        {
+          "n": 2,
+          "houses": [
+            "A13",
+            "A14",
+            "A15",
+            "A16",
+            "A17",
+            "A18"
+          ],
+          "common": [
+            "Guarita Social 2"
+          ]
+        },
+        {
+          "n": 3,
+          "houses": [
+            "A07",
+            "A08",
+            "A09",
+            "A10",
+            "A11",
+            "A12"
+          ],
+          "common": [
+            "Banheiro social",
+            "PT1"
+          ]
+        },
+        {
+          "n": 4,
+          "houses": [
+            "A01",
+            "A02",
+            "A03",
+            "A04",
+            "A05",
+            "A06"
+          ],
+          "common": [
+            "Módulo Serviço 2"
+          ]
+        }
+      ],
+      "manufacturer": "Siemens",
+      "model": "FC726",
+      "modelSource": "Confirmação do utilizador · 08/10/2026",
+      "ip": "192.168.2.62",
+      "operatingName": "Portaria de Serviço",
+      "subnetMask": null,
+      "networkSource": "Localização e IP confirmados pelo utilizador · 09/10/2026",
+      "networkCheck": "Teste de 09/10/2026: 3/3 respostas ICMP, média 1,049 ms. Sem leitura real de alarmes."
+    },
+    {
+      "id": "SADI 2",
+      "location": "Salão de Festas",
+      "loops": [
+        {
+          "n": 1,
+          "houses": [
+            "B01",
+            "B02",
+            "B03",
+            "B04",
+            "B05",
+            "B06",
+            "B07",
+            "B09"
+          ],
+          "common": []
+        },
+        {
+          "n": 2,
+          "houses": [
+            "B11",
+            "B13",
+            "B15",
+            "B17",
+            "B19",
+            "B20"
+          ],
+          "common": []
+        },
+        {
+          "n": 3,
+          "houses": [
+            "B08",
+            "B10",
+            "B12",
+            "B14",
+            "B16",
+            "B18"
+          ],
+          "common": []
+        },
+        {
+          "n": 4,
+          "houses": [
+            "B21",
+            "B22",
+            "B23",
+            "B24",
+            "B25",
+            "B26"
+          ],
+          "common": [
+            "PT2"
+          ]
+        },
+        {
+          "n": 5,
+          "houses": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07"
+          ],
+          "common": []
+        },
+        {
+          "n": 6,
+          "houses": [
+            "E03",
+            "E02",
+            "E01",
+            "E24",
+            "E25"
+          ],
+          "common": []
+        },
+        {
+          "n": 7,
+          "houses": [],
+          "common": [
+            "Salão de Festas"
+          ]
+        },
+        {
+          "n": 8,
+          "houses": [],
+          "common": [
+            "Academia",
+            "Área técnica (SADI 2)",
+            "Churrascaria"
+          ]
+        }
+      ],
+      "manufacturer": "Siemens",
+      "model": "FC726",
+      "modelSource": "Confirmação do utilizador · 08/10/2026",
+      "ip": "192.168.2.60",
+      "operatingName": "Salão de Festas",
+      "subnetMask": "255.255.255.0",
+      "networkSource": "Fotografia do painel · 08/10/2026",
+      "networkCheck": "Teste de 09/10/2026: 3/3 respostas ICMP, média 1,223 ms. Nome interno Central 1; não altera a identificação documental SADI 2."
+    },
+    {
+      "id": "SADI 3",
+      "location": "Guarita Social 1",
+      "loops": [
+        {
+          "n": 1,
+          "houses": [
+            "C01",
+            "C03",
+            "C05",
+            "C07",
+            "C09",
+            "C10",
+            "C11",
+            "C12"
+          ],
+          "common": []
+        },
+        {
+          "n": 2,
+          "houses": [
+            "C23",
+            "C25",
+            "C27",
+            "C29",
+            "C31",
+            "C32"
+          ],
+          "common": [
+            "Guarita Social 1",
+            "PT4"
+          ]
+        },
+        {
+          "n": 3,
+          "houses": [
+            "C24",
+            "C26",
+            "C28",
+            "C30",
+            "C02",
+            "C04",
+            "C06",
+            "C08"
+          ],
+          "common": []
+        }
+      ],
+      "manufacturer": "Siemens",
+      "model": "FC726",
+      "modelSource": "Confirmação do utilizador · 08/10/2026",
+      "ip": "192.168.2.61",
+      "operatingName": "Portaria Sul",
+      "subnetMask": null,
+      "networkSource": "Localização e IP confirmados pelo utilizador · 09/10/2026",
+      "networkCheck": "Teste de 09/10/2026: 3/3 respostas ICMP, média 0,998 ms. Sem leitura real de alarmes."
+    },
+    {
+      "id": "SADI 4",
+      "location": "Guarita de Serviço",
+      "loops": [
+        {
+          "n": 1,
+          "houses": [
+            "E15",
+            "E16",
+            "E17",
+            "E18",
+            "E19",
+            "E20"
+          ],
+          "common": []
+        },
+        {
+          "n": 2,
+          "houses": [
+            "E04",
+            "E05",
+            "E07",
+            "E09",
+            "E11",
+            "E13"
+          ],
+          "common": []
+        },
+        {
+          "n": 3,
+          "houses": [
+            "E06",
+            "E08",
+            "E10",
+            "E12",
+            "E14",
+            "E21",
+            "E22",
+            "E23"
+          ],
+          "common": []
+        },
+        {
+          "n": 4,
+          "houses": [
+            "D08",
+            "D09",
+            "D10",
+            "D11",
+            "D12",
+            "D13",
+            "D14"
+          ],
+          "common": [
+            "PT3"
+          ]
+        },
+        {
+          "n": 5,
+          "houses": [
+            "C13",
+            "C14",
+            "C15",
+            "C16",
+            "C17",
+            "C18",
+            "C19",
+            "C20"
+          ],
+          "common": []
+        },
+        {
+          "n": 6,
+          "houses": [
+            "C21",
+            "C22"
+          ],
+          "common": [
+            "Módulo Serviço 1",
+            "Edifício administrativo"
+          ]
+        },
+        {
+          "n": 7,
+          "houses": [],
+          "common": [
+            "Área técnica (SADI 4)",
+            "Depósito",
+            "Guarita de Serviço"
+          ]
+        }
+      ],
+      "manufacturer": "Siemens",
+      "model": "FC726",
+      "modelSource": "Confirmação do utilizador · 08/10/2026",
+      "ip": "192.168.2.63",
+      "subnetMask": "255.255.255.0",
+      "gateway": null,
+      "networkSource": "Fotografia do painel · 08/10/2026",
+      "networkCheck": "Teste de 09/10/2026: 0/3 respostas ICMP. Isto não confirma central desligada. Localização anterior Guarita de Serviço; nome actual por confirmar.",
+      "operatingName": "Nome actual por confirmar"
+    }
+  ],
+  "residences": 123,
+  "documentary_candidates": 1937,
+  "counts": {
+    "residence_templates": 1845,
+    "admin": 26,
+    "gym": 25,
+    "guards": 32,
+    "security": 9
+  },
+  "field_identification": {
+    "station": "SADI 2",
+    "location": "Salão de festas",
+    "central_model": "FC726",
+    "operating_unit": "FCM7204-Z3",
+    "mainboard": "FCM2027",
+    "article": "A5Q00031466-04",
+    "source": "Photographed labels and user confirmation 2026-10-09",
+    "firmware_status": "not_confirmed",
+    "observed_software_reference": "50.21.46",
+    "license_status": "not_confirmed",
+    "supervision_configuration_status": "not_confirmed",
+    "interface_observation": "Ethernet RJ45 X5 cable connected; supervision contract unconfirmed"
+  }
+}

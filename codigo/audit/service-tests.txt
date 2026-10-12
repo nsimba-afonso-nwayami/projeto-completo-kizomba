@@ -1,0 +1,14 @@
+test_atomic_import_conflicts (test_service.IntegrationTests.test_atomic_import_conflicts) ... ok
+test_audit_chain (test_service.IntegrationTests.test_audit_chain) ... ok
+test_candidate_and_unknown_never_located (test_service.IntegrationTests.test_candidate_and_unknown_never_located) ... ok
+test_http_auth_origin_commands_and_static (test_service.IntegrationTests.test_http_auth_origin_commands_and_static) ... ok
+test_identity_collision (test_service.IntegrationTests.test_identity_collision) ... ok
+test_normalization_states (test_service.IntegrationTests.test_normalization_states) ... ok
+test_persistence_dedup_local_ack (test_service.IntegrationTests.test_persistence_dedup_local_ack) ... ok
+test_real_ingestion_refused (test_service.IntegrationTests.test_real_ingestion_refused) ... ok
+test_timezone_and_out_of_order (test_service.IntegrationTests.test_timezone_and_out_of_order) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.621s
+
+OK

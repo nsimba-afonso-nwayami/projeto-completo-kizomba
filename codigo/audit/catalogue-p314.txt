@@ -1,0 +1,207 @@
+Cerberus PRO Planning Tool
+Panels, network and accessories
+To enable remote operation with Cerberus-Re-
+mote, the PC has to be connected to an 
+Ethernet switch of the backbone. Access to a 
+particular panel in a cluster will be granted by 
+installing an S1 license key into this panel.
+Danger 
+management 
+system from 
+Siemens
+Backbone 
+(C-WEB/LAN)
+Clusters can be networked via an Ethernet 
+back bone, using industrial LAN technology. 
+Siemens is the first manufacturer offering 
+this as EN 54-approved solution. With this 
+architecture that is 
+standard in IT, building 
+structures and organizational processes can be 
+ideally depicted.
+Characteristics of networking via backbone
+–  Ethernet switch to connect a cluster to the 
+backbone
+–  Redundant transmission thanks to circular wiring
+–  Redundant connection possible due to two 
+Ethernet switches
+–  Increased EMC protection thanks to fiber-op-
+tic cabling
+–  Easily programmable, EN 54-conform sys-
+tem-wide control
+–  Configurable view of single panels
+–  
+All panels can be used as router panel (for 
+further
+ information on FC726, please see 
+separate documentation). 
+Key data
+–  Max. number of panels in EN 54 system: 64
+–  Max. number of panels in a cluster: 16
+–  Max. number of networkable clusters: 14
+–  Number of panels placed directly 
+on backbone:  4*
+–  Number of panels with system-wide view: 5*
+–  Max. distance between clusters 
+(ﬁ  ber optic: multi mode): 3,000 m
+* and more with relevant system topology
+The following guidelines must be observed
+–  To fulfill the EN 54 norm, you need only 
+1 Ethernet switch to connect control panels 
+with fewer than 512 ﬁ  re detectors to the 
+backbone.
+Cluster 
+(C-WEB/SAFEDLINK)
+Via the powerful cluster, up to 32 panels can be 
+networked (ﬁ  re control panels and ﬁ  re terminals).
+Characteristics of networking via the 
+system bus
+–  Wiring with two wires
+–  Redundant transmission thanks to circular wiring
+–  Increased safety due to degrade mode using 
+a second network module
+–  No additional cabling necessary for degrade 
+mode; even for systems with more than 
+512 fire detectors
+–  Configurable view of individual panels
+Key data
+–  Max. number of networkable panels:  32
+–  Max. number of networkable panels 
+if connected to a danger 
+management system:  16
+–  Max. distance between panels with 
+copper cable
+• without repeater:  1,000 m 
+• with repeater:  2,000 m
+–  Max. distance between panels with 
+ﬁ  ber-optic cable 
+• multi mode:  2,500 m 
+• single mode: 15,000 m
+–  Max. number of panels with 
+system-wide view:  5
+C-NET
+The C-NET is a modern, multi-purpose bus 
+system. It allows rapid, fail-safe communication 
+between the Cerberus™ PRO bus elements and the 
+ﬁ  re control panel.
+Characteristics of networking via the 
+detector bus
+– Use of all cable types (shielded or unshielded)
+–  Integration of star-shaped cable networks 
+without modifications to cable network
+– Shielding not necessary
+– 2-wire loop
+C-NET
+(For further details see also the Cerberus PRO 
+Planning Tool – C-NET devices)
+Fire terminal 
+FT724-ZZ
+Order no.: 
+S54400-C31-A2
+The FT724 has the following features:
+– Integrated control unit
+– Separate DC 24 V supply input possible
+– Redundant DC 24 V supply input
+–  Networkability via C-WEB/SAFEDLINK or Ethernet
+Fire terminal FT724
+Cluster (C-WEB/SAFEDLINK)
+The FC724 is a compact 4-loop ﬁ  re control 
+panel. It has the following features:
+– 4 C-NET loops
+– Integrated inputs/outputs for peripherals
+– Integrated control unit
+– Integrated power supply
+– Automatic conﬁ  guration
+–  Networkability via backbone (C-WEB/LAN), 
+cluster (C-WEB/SAFEDLINK) or Ethernet
+Fire control panel FC724 (4-loop)
+FC726 is a modular ﬁ  re 
+control panel. It has the 
+following features:
+–  4 C-NET loops
+–  5 slots for additional 
+module bus cards
+–  Integrated inputs/outputs 
+for peripherals
+–  Integrated control unit
+–  Integrated power supply
+–  Automatic conﬁ  guration
+–  Networkability via back-
+bone (C-WEB/LAN), cluster 
+(C-WEB/SAFEDLINK) or 
+Ethernet
+Remote access with 
+Cerberus-Remote
+Ethernet switch 
+(modular)
+FN2012-A1
+Backbone (C-WEB/LAN)
+Ethernet*
+Serial interfaces  One optional RS232 and/or one RS485 interface 
+(also freely combinable) per panel or fire terminal  
+Backbone (C-WEB/LAN)  Network for connecting clusters 
+Cluster (C-WEB/SAFEDLINK) Network for connecting panels
+C-NET Network for connecting Cerberus PRO addressable devices
+Legend for the interfaces and networks:
+Fire control panel 
+FC726-ZA 
+Order no.: 
+S54400-C87-A1
+Fire control panel 
+FC723-ZA
+Order no.: 
+S54400-C14 3-A1
+Cluster (C-WEB/SAFEDLINK)
+Fire control panel modular 
+FC726 / FC723
+Customer network
+Fire control panel 
+FC724-ZA
+Order no.: S54400-C30-A2
+Fire control panel 
+FC724-ZE
+Order no.: S54400-C30-A3
+Fire control panel 
+FC722-ZZ
+Order no.: S54400-C29-A5
+Fire control panel 
+FC722-YZ
+Order no.: S54400-C29-A4
+Ethernet switch 
+(modular)
+FN2012-A1
+System-wide view 
+with the fire 
+terminal FT724
+FC723 is a modular ﬁ  re 
+control panel. It has the 
+following features:
+–  2 C-NET loops
+–  2 slots for additional 
+module bus cards
+–  Integrated inputs/outputs 
+for peripherals
+–  Integrated control unit
+–  Integrated power supply
+–  Automatic conﬁ  guration
+–  Networkability via back-
+bone (C-WEB/LAN), cluster 
+(C-WEB/SAFEDLINK) or 
+Ethernet
+–  Power supply to all bus elements via the 
+C-NET (except transponder FDCIO223, 
+LaserFOCUS, extinguishing control unit 
+XC10 and ASD FDA221, FDA241)
+Key data
+– Up to 40 T-taps
+– Up to 252 bus elements on one loop
+–  Cable lengths up to 3.3 km with up to 252 
+bus elements
+Remote access with 
+Cerberus Mobile
+Remote access to
+management platform
+*  simplified drawing (without additional 
+network hardware components)
+Router + Firewall + VPN*
+15_System_Overview.indd   2 07.08.17   17:17

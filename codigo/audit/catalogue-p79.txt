@@ -1,0 +1,48 @@
+4
+Addressable fire control network participants
+)Cx networkable and modular fire control panels
+(xpansion )Cx
+4-23
+Siemens Switzerland Ltd © 2018   
+2rder 1o. Product 1o.
+S4400P1A1 )CAA
+)CAA
+/icense key S
+iButton with license for
+Sinteso ! Sinteso9iew and BACnet to 3rd party supervision  basic command
+Cerberus P52 ! Cerberus5emote and BACnet to 3rd party supervision  basic command
+2ne license key is reTuired per station. 2rder 1o. Product 1o.
+S4400P16A1 )CAA
+)CAA
+/icense key S
+iButton with license for
+Sinteso ! Sinteso9iew , BACnet to 3rd party supervision  extended command and Sinteso Mobile 
+Cerberus P52 ! Cerberus5emote, BACnet to 3rd party supervision  extended command and Cerberus 
+Mobile 
+2ne license key is reTuired per station.
+2rder 1o. Product 1o.
+A400010126 )72A
+)72A
+(vent printer
+The event printer is a thermal printer that logs alarms, faults and general messages. The event printer 
+can be used in all control panels if space is available. The 5S232 module is reTuired to operate the print-
+er. Event printer includes cables for interface and power supply and a paper roll.
+The 5S232 module FCA2001A1 must be ordered separately.
+2perating voltage DC «48 9
+2perating current 3 A # DC  9
+0.7 A # DC 48 9
+4uiescent current 0 mA
+Interface 5S232 serial
+2perating temperature 0«0 C
+Storage temperature -20…+70 °C
+5elative humidity   rel. no condensation
+Dimensions : x + x D 8 x 8 x  mm
+2rder 1o. Product 1o.
+A40001011 )+AA
+)+AA
+0ounting plate
+The mounting plate must be screwed onto the back wall of the housing. The mounting plate can pivot, 
+allowing access to the underlying module, i.e. to mount the fire brigade periphery module or the sound-
+er modules.
+Dimensions : x + x D 221 x 241 x 46 mm
+04_Addressable_fire_control_network_participants.indd   23 08.08.17   08:44

@@ -1,0 +1,48 @@
+Danger management system
+Cerberus DMS
+ 
+14-2
+Siemens Switzerland Ltd © 2018   
+14
+Order No. Product No.
+CerberusDMS Cerberus DMS
+Cerberus DMS
+ Danger management station
+Cerberus DMS is the nextgeneration management station. It is flexible and customi]able to give you the 
+power to respond to life safety events faster and with more information than other platforms. 
+Cerberus DMS is an integrated management platform covering Siemens standard systems for fire safety, 
+intrusion detection and video surveillance.
+)eatures and benefits
+Easy to operate: Save operation costs and increase reliability by enabling faster and more accurate deci-
+sions in an emergency situation thanks to the comprehensive user interface.
+- :orkflowdriven user interface for any discipline and any type of user, that dynamically ´anticipatesµ 
+the next steps
+- :orkflowdriven user interface for any discipline and any type of user that dynamically ´anticipatesµ 
+next steps
+- Assisted and investigative event management for fast response to critical events 
+- :eb client and regular installed client with identical functionality allow access from anywhere at any 
+time
+- Customized reporting capabilities
+- App for smartphones and tablets to let an operator view and handle the alarms and obMects of the 
+danger management station. Search for ´Cerberus DMSµ at the *oogle Play  Store and the Apple 
+App Store
+SM.
+- Builtin email for remote notification
+Easy and fast engineering: 5educing engineering costs and time thanks to remote and online engineer-
+ing in real time!
+- 2nline engineering to speed up proMect commissioning time and to reduce system downtime
+- Local and remote (Web) engineering with full capabilities
+- Comprehensive libraries
+- Powerful multilayered graphics supporting animated symbols, import of AutoCAD plans
+- Builtin profiles for fire safety and security users
+Openess and integration: Adapt to changing customer needs with multi-discipline design and intelli-
+gent interactions.
+- 2pen interfaces via BACnet, S1MP, 2PC, Modbus and 5ESTful :eb Services 
+- Standard interface support for IT systems
+- Normalization and management of data from multiple sources
+- Able to grow with the facility·s needs
+- Scalable to support small and large facilities
+Data sheet A6V10427860
+Ordering Information Contact your local sales distribution center for 
+detailed information
+14_Danger_management_system.indd   2 07.08.17   17:22

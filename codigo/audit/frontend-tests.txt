@@ -1,0 +1,15 @@
+PASS: códigos da planta actual; fichas sem duplicados; contagens; reconhecimento; pedido de isolamento não executado; encerramento; texto escapado; validação; persistência; filtros.
+PASS: quatro centrais; códigos residenciais antigos retirados dos dados activos.
+PASS: equipamentos por casa e piso; selecção do detector; local automático; destaque da avaria; central/loop; rejeição de ponto de outra casa; sensores adicionais.
+PASS: administração com 3 plantas; 26 referências documentais; incêndio SADI4/Loop6; intrusão sem atribuição indevida; avaria localizada na UPS; sinalização sem telemetria inventada.
+PASS: seis documentos do salão; SADI2 Loop7; planta T3 e divergências visíveis nas casas.
+PASS: modelo exclusivamente da planta; 15 referências; dois térmicos; pânico nos dois pisos; antigo corredor removido.
+PASS: ginásio; 25 referências documentais; selecção e ocorrência localizada; incêndio SADI2/Loop8; CFTV separado; sinalização sem endereços fictícios.
+PASS: localizar ocorrência do ginásio muda para camada 104 e destaca o botão; 203 contém quatro câmaras e um armário.
+PASS: três guaritas conforme planta; 32 referências distintas; centrais/loops; ocorrência no ponto; intrusão sem loop SADI presumido.
+PASS: segurança geral; duas plantas; nove pontos de ronda; ocorrência localizada no CHIP07; sem loop SADI; CFTV documental.
+PASS: 123 casas actuais; A71 e etiquetas conjuntas; códigos retirados; associação antiga não aplicada; histórico preservado em namespace antigo.
+PASS: estrutura documental anterior das centrais restaurada; mapa actual mantido; sem associação residencial presumida.
+PASS: importar cópia antiga não associa casas por igualdade do código.
+PASS: casas unificadas, pesquisa por alias, migração actual e histórico preservado.
+PASS: pânico, assistência e alarmes técnicos não recebem loop de incêndio presumido.

@@ -1,0 +1,1 @@
+PASS: API autenticada; token apenas em memória; simulação identificada; destaque separado; localização; file:// bloqueado; sem comandos.

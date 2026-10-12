@@ -1,0 +1,253 @@
+IMOVIAS | Kizomba - Integração Siemens | 09/10/2026
+1
+Integração Siemens no aplicativo do Condomínio
+Kizomba
+Preparado para Eng.º Helder Neves | 09/10/2026
+Estado: especificação de auditoria e implementação; sem validação em centrais reais.
+1. Resultado da análise documental
+O ficheiro 1111.pdf contém 340 páginas do catálogo Cerberus PRO de produtos e acessórios. Os rodapés
+indicam © Siemens 2018; os metadados indicam produção em 2017. Não é um backup das centrais nem
+um protocolo de integração completo. A análise abrangeu o texto das 340 páginas, com inspecção visual
+das páginas relevantes para licenças e interfaces. As capacidades do catálogo são possibilidades, não
+prova da instalação no condomínio.
+Referências abaixo usam a posição da página no PDF, contando a capa como página 1.
+- Página 78, secção 4-22: FCA2033-A1 / S1, supervisão BACnet por terceiros; uma chave por estação.
+- Página 79, secção 4-23: FCA2034-A1 / S2, supervisão e comandos básicos; FCA2035-A1 / S3, supervisão
+e comandos alargados, incluindo Cerberus Mobile; uma chave por estação para as opções descritas.
+- Página 89, secção 4-33: NK8237.2, referência S54461-C7-A1, gateway Modbus RTU e TCP/IP
+bidireccional; ficha A6V10316240. Confirmar modelos, versão, disponibilidade e mapa de dados antes de
+escolher esta via.
+- Página 103, secção 4-47: Cerberus Mobile apresenta estados e comandos conforme nível de acesso,
+prevê VPN e indica S3. A regra de licença do aplicativo oficial nesta página não deve ser generalizada para
+um cliente BACnet desenvolvido por terceiros. A sua disponibilidade actual não foi confirmada.
+- Página 308, secção 14-2: Cerberus DMS, plataforma de gestão com interfaces abertas e RESTful Web
+Services. A direcção, os endpoints, a autenticação e as capacidades de cada interface precisam da
+documentação da versão instalada.
+- Página 310, secção 14-4: MM8000 descreve opções de servidor OPC DA MK8000 e RESTful Web Services
+para terceiros. A presença destas opções no computador antigo não foi confirmada.
+- Página 314: distingue C-NET, C-WEB/SAFEDLINK e backbone C-WEB/LAN. Um loop de detectores não é
+uma rede IP comum. Os limites indicados nesta edição dependem da topologia e devem ser verificados na
+documentação aplicável.
+Não foram identificados neste catálogo IPs reais do condomínio, firmware instalado, licenças instaladas,
+clientes autorizados, identificadores de pontos, mapas de registos, endpoints REST ou código do
+aplicativo.
+2. Caminhos e funcionalidades
+A. BACnet/IP directo
+Avaliar como primeira hipótese para uma integração própria quando central, firmware, licença e
+configuração o permitirem. Confirmar PICS e documentação de integração Siemens, serviços de leitura,
+notificações, identificadores, visibilidade, limites de clientes, destinatários de eventos e operações de
+comando. Não pressupor que uma biblioteca BACnet genérica implementa as particularidades do sistema.
+S1 orienta a supervisão; S2 e S3 indicam níveis adicionais, sem estabelecer nesta análise a lista exacta de
+comandos.
+B. Gateway NK8237.2 / Modbus
+Via explicitamente identificada no PDF. Pode simplificar a adaptação do backend, mas exige
+hardware/configuração e um mapa real de registos, estados e operações. Comunicação bidireccional não
+significa acesso a todas as funções. Determinar se disponibiliza eventos, apenas estados ou ambos, e
+como tratar transições rápidas e ocorrências durante interrupções. Outros gateways, como NK8232, só
+entram na comparação com documentação própria; não são intercambiáveis por pressuposto.
+
+IMOVIAS | Kizomba - Integração Siemens | 09/10/2026
+2
+C. Reaproveitar MM8000
+Se o sistema antigo comunicava efectivamente com as centrais, preservar o disco e recuperar projecto,
+drivers, versões, licenças, mapas e históricos. Investigar primeiro se RESTful Web Services está disponível;
+alternativamente, se a opção MK8000/OPC DA está instalada. A existência destas opções no catálogo não
+comprova a sua instalação. OPC DA não é OPC UA: eventual ponte requer configuração e validação
+própria.
+D. Cerberus DMS ou Desigo CC como intermediário
+Avaliar quando uma plataforma Siemens suportada oferece vantagem de manutenção, integração ou
+cobertura. O PDF descreve Cerberus DMS; Desigo CC é uma alternativa externa a este levantamento que
+exige documentação própria. Confirmar driver da central e interface norte para aplicações externas,
+licenças de dados/comandos e semântica dos eventos. REST numa plataforma de gestão não implica REST
+nativo no painel.
+E. Cerberus Mobile / Cerberus-Remote
+Usar como referência funcional ou opção operacional oficial, se suportada actualmente. Não assumir que a
+comunicação destas aplicações constitui uma API pública reutilizável. Não extrair credenciais nem
+reproduzir interfaces privadas como estratégia padrão.
+F. Contactos de relé
+Alternativa limitada a estados disponibilizados pelas saídas configuradas. Não fornece automaticamente
+residência, divisão e detector; não satisfaz controlo completo. Porta de impressora/saída de texto, caso
+documentada, pode auxiliar diagnóstico, mas não substitui interface bidireccional de supervisão.
+Critério de escolha: evidência de compatibilidade, cobertura funcional, licenças, recuperação após falhas,
+segurança, suporte, custo em Kz mediante cotação e esforço de adaptação. Não atribuir probabilidades
+numéricas sem medições. Nenhuma via está confirmada para o condomínio nesta fase.
+3. Prompt 1 - Auditoria completa e selecção da integração
+COPIAR A PARTIR DA PRÓXIMA LINHA ATÉ AO FIM DESTE PROMPT.
+Actua como engenheiro de integração Siemens e arquitecto de software no projecto do Condomínio
+Kizomba. O aplicativo existente deve receber e localizar eventos e permitir apenas comandos remotos
+oficialmente suportados, autorizados e validados. Analisa o projecto real antes de alterá-lo; preserva as
+funcionalidades existentes e lê as instruções do repositório.
+ENTRADAS E EVIDÊNCIA
+Usa o código, configuração sanitizada, registos, inventário, fotografias, backups e documentação
+fornecidos. O ficheiro 1111.pdf é um catálogo Cerberus PRO de 340 páginas, não a configuração instalada.
+Referências: PDF p.78 S1/FCA2033-A1; p.79 S2/FCA2034-A1 e S3/FCA2035-A1; p.89
+NK8237.2/A6V10316240; p.103 Cerberus Mobile; p.308 Cerberus DMS; p.310 MM8000 com opções
+MK8000/OPC DA e RESTful Web Services; p.314 topologias. Confirma visualmente referências mal
+extraídas e verifica documentação oficial correspondente ao modelo e versão. Classifica cada afirmação
+como confirmada, hipótese, ausente ou a validar em campo. Se o PDF ou o repositório não estiver
+acessível, declara-o e não finjas a análise.
+AUDITORIA DO APLICATIVO
+Identifica stack, frontend, backend, base de dados, autenticação, alojamento, tarefas em segundo plano,
+notificações, código de conectores e testes. Verifica se a integração é real, simulada ou inexistente.
+Rastreia o percurso completo: origem na central, transporte, interpretação, persistência, mapa,
+notificação e auditoria. Relaciona cada conclusão com ficheiro e função. Não confundir circuito desenhado,
+catálogo ou dados de demonstração com pontos obtidos da central.
+INVENTÁRIO DO SISTEMA
+Enumera centrais e terminais separadamente: modelo, firmware, localização, disciplina, estação, loop,
+dispositivos, interfaces, endereço de comunicação, versão do projecto, licença, visibilidade e cliente de
+
+IMOVIAS | Kizomba - Integração Siemens | 09/10/2026
+3
+supervisão. Confirma se incêndio, intrusão e pânico pertencem a subsistemas diferentes. Não atribuas aos
+botões azuis funções ou protocolos apenas pela cor. Não declares que uma falha de loop identifica
+automaticamente a residência ou é resolvida pela integração.
+COMPARAÇÃO DOS CAMINHOS
+Avalia BACnet/IP directo; NK8237.2/Modbus; MM8000 com REST ou MK8000/OPC DA; Cerberus DMS e,
+quando justificado, Desigo CC com interface documentada. Considera aplicações oficiais como alternativa
+operacional e relés como opção limitada. Para cada caminho indica requisitos, cobertura de eventos e
+comandos, limitações, dependências, suporte actual, custo mediante cotação, esforço e prova mínima
+para o aceitar ou excluir. Não assumir que todos os produtos Siemens possuem a mesma API. Não copiar o
+identificador de um cliente activo nem contornar licenças.
+DESCOBERTA E DIAGNÓSTICO
+Começa por documentação, backups, configurações e captura passiva autorizada. Restringe a descoberta
+activa aos equipamentos e rede expressamente autorizados, com taxa limitada e janela coordenada; não
+executes varrimentos indiscriminados, força bruta, fuzzing, escrita de propriedades ou comandos de
+ensaio. Verifica conectividade, porta configurada, identidade do cliente, firewall, sub-redes, topologia,
+destinatários de eventos e sincronização horária. Distingue sucesso de ping, comunicação de protocolo e
+integração funcional. Regista lacunas sem expor segredos.
+COBERTURA FUNCIONAL
+Constrói uma matriz por modelo/versão/interface: alarme, pré-alarme quando disponível, avaria,
+isolamento, manutenção/teste, perda de comunicação e normalização; identificação de
+residência/divisão/dispositivo; histórico; notificações; reconhecimento local; reconhecimento no painel;
+reposição; silenciamento do besouro do painel; silenciamento de sirenes; activação/desactivação e
+isolamento, somente quando documentados. Distingue todas estas operações. Para cada célula usa
+documentado, implementado, testado, bloqueado ou não suportado, com evidência.
+ARQUITECTURA E IMPLEMENTAÇÃO
+Propõe um serviço local que comunique com a interface Siemens, normalize eventos e estados, mantenha
+armazenamento durável e exponha uma API autenticada ao aplicativo. Reutiliza a stack actual.
+Implementa autonomamente as partes de software autorizadas e verificáveis: modelos, importação,
+diagnóstico, observabilidade, fluxo de eventos e testes. Na ausência de acesso físico, entrega simulação
+identificada e conectores explicitamente bloqueados onde faltam contratos; não fabricar endpoints nem
+comandos. A configuração e os comandos em centrais reais requerem validação de campo coordenada
+com o responsável técnico.
+CRITÉRIOS E ENTREGA
+Produz inventário com fontes, diagnóstico por camada, comparação, caminho recomendado com
+alternativa, alterações concretas, mapa de pontos, matriz de capacidades, testes executados e
+pendências. Define metas mensuráveis de latência, detecção de perda de ligação, retenção, reconexão e
+notificações para aprovação; não inventes requisitos normativos. A aceitação exige rastreabilidade dos
+pontos do âmbito, estados correctos, comandos confirmados, tratamento de falhas e ausência de
+regressões. Não prometer compatibilidade universal ou certificação. Avança nas partes independentes e
+faz apenas perguntas indispensáveis.
+FIM DO PROMPT 1.
+4. Prompt 2 - Implementação de código e execução do aplicativo
+COPIAR A PARTIR DA PRÓXIMA LINHA ATÉ AO FIM DESTE PROMPT.
+Actua como programador responsável por implementar e executar a integração Siemens no aplicativo
+existente do Condomínio Kizomba. Usa os resultados da auditoria e o repositório real. Entrega alterações
+funcionais, instruções exactas de execução e evidência de testes. Não recries o aplicativo sem
+necessidade nem escolhas uma stack nova antes de inspeccionar a existente.
+1. INSPECÇÃO E BASELINE
+Lê as instruções locais, identifica os serviços, package manifests, lockfiles, migrations, testes e
+configuração. Regista o estado inicial e preserva alterações do utilizador. Executa as verificações
+relevantes existentes. Produz um plano breve e implementa-o sem parar apenas na proposta.
+
+IMOVIAS | Kizomba - Integração Siemens | 09/10/2026
+4
+2. CONTRATO DOS CONECTORES
+Define uma interface compatível com a stack para ligação, saúde, capacidades, importação de pontos,
+leitura de estados, eventos e comandos. Implementa apenas o adaptador seleccionado e suportado pelas
+evidências. Para BACnet confirma objectos, propriedades, serviços, notificações e comando Siemens; para
+Modbus exige mapa real, tipos, bits, endianness, endereçamento, Unit ID, operações e limites; para REST
+exige especificação de endpoints, autenticação, paginação, eventos e comandos; para OPC DA exige
+contrato de tags e ambiente Windows/ponte apropriado. Não inventes bibliotecas, assinaturas ou registos.
+Se faltarem documentos, devolve CONFIGURATION_REQUIRED ou UNSUPPORTED e uma lista precisa do
+que falta. Interfaces genéricas e testes podem ser implementados enquanto o acesso de campo está
+pendente.
+3. CONFIGURAÇÃO E MODOS
+Fornece configuração de exemplo sem segredos, validada por esquema: conector, equipamento,
+endereço, porta real, identificadores necessários, timeouts, reconexão e referência segura às credenciais.
+Defaults conservadores: SIMULATION explícita para demonstração, READ_ONLY para ligação real;
+COMMANDS_ENABLED=false. Nunca usar IPs, PINs, objectos ou permissões fictícios como valores de
+produção. Separar dados simulados dos reais e impedir que a simulação envie comandos ao hardware.
+4. DADOS E MAPEAMENTO
+Cria ou adapta entidades para equipamentos, pontos, estados, eventos, comunicação, notificações,
+utilizadores e comandos auditados. Identifica cada ponto pela combinação da origem e identificador do
+protocolo, evitando colisões entre centrais. Guarda fonte e versão do mapeamento, residência, piso,
+divisão e tipo. Importa CSV/JSON e os formatos efectivamente disponibilizados; suporta SiB-X apenas com
+estrutura validada e amostras. Rejeita duplicados ambíguos e apresenta pontos não mapeados sem
+inventar localização. Mantém enums próprios de alarme e avaria independentes e preserve o valor original
+do protocolo.
+5. RECEPÇÃO E RECUPERAÇÃO
+Implementa mecanismos documentados de eventos e/ou leitura com limites apropriados. Mantém uma
+fotografia inicial e reconcilia após falhas. Persiste antes de notificar; usa deduplicação que preserve
+transições e ocorrências distintas. Regista horário do dispositivo e de recepção em UTC e apresenta
+Africa/Luanda. Faz renovação de subscrições quando aplicável, reconexão com backoff e fila durável.
+Comunicação interrompida deve marcar qualidade desconhecida/desactualizada, nunca normal. Não
+prometer recuperar eventos passados se a interface não os disponibilizar; assinalar lacunas.
+6. API E INTERFACE
+Implementa na API do nosso aplicativo os recursos necessários para equipamento, saúde, pontos, eventos,
+estados, notificações e comandos. Estes recursos são nossos; não são endpoints inventados da Siemens.
+Usa contratos tipados, validação, autorização no servidor e limites. Liga os ecrãs aos dados reais; suporta
+filtros por residência e disciplina, estados simultâneos, pontos não mapeados e indicador de actualização.
+Comunica alterações ao frontend por SSE ou WebSocket conforme arquitectura. Não expor protocolo
+industrial directamente ao navegador nem à Internet.
+7. COMANDOS REMOTOS
+Usa uma lista explícita de comandos permitidos por equipamento, firmware, licença, perfil e âmbito. O
+backend bloqueia capacidades desconhecidas ou não validadas, mesmo que a interface tente chamá-las.
+Exige operador identificado e confirmação explícita para comandos críticos; suporta aprovação adicional
+quando definida pelo responsável. Distingue reconhecimento no aplicativo, reconhecimento no painel,
+reposição, besouro, sirenes e isolamento. Audita pedido, alvo, utilizador, estado anterior, resposta e
+estado posterior. Marca pending, rejected, failed, confirmed ou indeterminate conforme evidência. Nunca
+apresentar HTTP 200 ou envio de pacote como confirmação da central. Após timeout, não repetir
+automaticamente um comando crítico de resultado incerto; consulta o estado e resolve a pendência.
+Idempotência da API não prova idempotência do equipamento. Não executar comandos reais durante
+testes automáticos.
+8. SEGURANÇA E OPERAÇÃO
+Reutiliza autenticação existente, implementa perfis e menor privilégio, protecção CSRF quando aplicável,
+sessões seguras, segredos fora do código, TLS no acesso à aplicação e rotação de credenciais. Prevê rede
+segmentada e acesso remoto protegido. O serviço local pode manter uma ligação de saída autenticada ao
+
+IMOVIAS | Kizomba - Integração Siemens | 09/10/2026
+5
+backend quando a arquitectura o justificar. Guarda backups e trilho de auditoria com controlo de
+alterações. A falha do aplicativo deve preservar a operação autónoma da central. Não alteres firmware,
+lógica de incêndio, ligações físicas ou parâmetros de campo para fazer um teste de software.
+9. TESTES SIGNIFICATIVOS
+Implementa testes para interpretação de mensagens, mapeamento, origem duplicada entre centrais,
+estados simultâneos, deduplicação, perda de ligação, reinício, fila, permissões, bloqueio em READ_ONLY,
+timeout e confirmação dos comandos. Cria simulador separado que produza alarmes e avarias
+identificados como simulação. Executa testes de integração em ambiente de laboratório disponível e
+declara as limitações. Prepara procedimento acompanhado para comparar eventos e comandos com o
+painel em campo. Não afirmar testes de hardware sem registos reais.
+10. EXECUÇÃO E ENTREGÁVEIS
+Entrega alterações no repositório, migrations com rollback, configuração de exemplo, README, contratos,
+testes e procedimento de comissionamento. Obtém os comandos exactos do projecto para instalar,
+migrar, executar, testar e parar os serviços; valida-os no ambiente disponível. Usa Docker Compose ou
+serviço do sistema apenas se adequado ao projecto. Para demonstração, documenta um arranque
+completo em simulação; para produção, documenta READ_ONLY e os requisitos de activação dos
+comandos, sem os activar silenciosamente. Reporta ficheiros alterados, resultados dos testes, modo
+realmente executado e bloqueios. A entrega de código não equivale à validação de compatibilidade em
+campo.
+Começa agora pela inspecção do repositório, indica o estado real do conector e implementa as partes
+verificáveis. Se não houver código acessível, pede o projecto exportado; não alegues que o aplicativo foi
+modificado.
+FIM DO PROMPT 2.
+5. Como utilizar
+1. Abra a ferramenta que tem acesso ao código do aplicativo e anexe este ficheiro e o catálogo.
+2. Execute o Prompt 1. Junte configurações sanitizadas, registos e fotografias disponíveis. Não partilhe
+PINs ou palavras-passe.
+3. Após a escolha fundamentada da interface, execute o Prompt 2 no mesmo projecto, com os resultados
+da auditoria.
+4. Valide simulação e ligação READ_ONLY antes do comissionamento acompanhado dos comandos.
+5. Mantenha uma matriz por central e por função. Compatibilidade de 100% só pode referir-se a um
+âmbito definido e integralmente testado.
+6. Fontes complementares para validação actual
+O catálogo histórico não comprova disponibilidade ou suporte actual. Consulte a revisão aplicável ao
+equipamento.
+- Siemens Cerberus DMS, página de produto: https://www.siemens.com/pt-pt/products/cerberus/dms/
+- Siemens Cerberus DMS, ficha A6V11852712:
+https://cache.industry.siemens.com/dl/files/084/109807084/att_1095974/v7/A6V11852712.pdf
+- Siemens NK8237, ficha A6V10316240, entrada oficial: https://sid.siemens.com/v/u/A6V10374788
+- Fonte principal: 1111.pdf fornecido pelo utilizador, páginas identificadas na secção 1.
+Limitação desta entrega: foram preparados os prompts e a análise documental. Não foi disponibilizado
+nem modificado o código do aplicativo; não houve ligação a centrais, descoberta de rede ou execução de
+comandos reais.

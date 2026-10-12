@@ -1,0 +1,25 @@
+import socket,json,datetime,time
+TARGET=('192.168.2.60',47808)
+s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM);s.bind(('192.168.2.207',0));s.settimeout(2)
+results=[]
+def read(prop,index=None):
+ invoke=len(results)+1
+ apdu=bytes([0,5,invoke,12,12])+((8<<22)|3).to_bytes(4,'big')+bytes([25,prop])
+ if index is not None:apdu+=bytes([41,index])
+ npdu=b'\x01\x00'+apdu;p=b'\x81\x0a'+(len(npdu)+4).to_bytes(2,'big')+npdu
+ r={'property':prop,'array_index':index,'request_hex':p.hex()}
+ try:
+  s.sendto(p,TARGET)
+  while True:
+   data,addr=s.recvfrom(4096)
+   if addr==TARGET and len(data)>8 and data[7]==invoke:break
+  r.update(response_hex=data.hex(),response_type=data[6]>>4)
+ except Exception as e:r['error']=str(e)
+ results.append(r);time.sleep(.2)
+for prop in [77,70,121,44]:read(prop)
+read(76,0)
+for i in range(1,6):read(76,i)
+s.close()
+report={'time':datetime.datetime.now().isoformat(),'target':TARGET,'operation':'ReadProperty only, device 3','results':results,'alarm_reading_confirmed':False}
+with open('outputs/BACnet-Propriedades-SADI2-2026-10-09.json','w') as f:json.dump(report,f,indent=2)
+print(json.dumps(report,indent=2))

@@ -1,0 +1,45 @@
+Danger management system
+MM8000 management station
+ 
+14-4
+Siemens Switzerland Ltd © 2018   
+14
+Order No. Product No.
+MM8000xxx MM8000
+MM8000
+ Danger management station 
+The MM8000 danger management station provides a powerful solution for the centrali]ed alarm man-
+agement, supervision and control of a wide range of safety and security systems. It supports specifically 
+fire safety, intrusion detection, access control, video surveillance and building automation installations. 
+Thirdparty systems can be connected via standard interfaces e.g. 2PC or Modbus.
+Benefits
+Safety: 8ser guidance in case of an emergency guarantees that the right measures are taken.
+Security: The operator will have access to exactly what was defined. 1ot less, not more.
+Flexibility: The system can be built and configured to best fit an actual situation MM8000 can be used 
+with brand new installations, as well as to enhance or extend existing systems.
+Reliability: The MM8000 is based on the concept of autonomous subsystems and distributed control. 
+Furthermore, redundant configurations can be implemented.
+Scalability: MM8000 will easily grow with company needs if support for more subsystems, more disci-
+plines and more stations is needed.
+Openness: Thirdparty subsystem integration using 2PC and Modbus via 1..
+Optional 2PC DA Server M.8000 and 5ESTful :eb services as interfaces to thirdparty systems.
+Mobile device support: MM8000 Alarms app for smartphones and tablets (Android and iOS) that lets 
+an operator view and handle events of a connected MM8000 management station. Search for MM8000 
+Alarms available at the *oogle Play
+TM Store and the Apple App StoreSM. 
+Features
+Complete overview of the actual state of technical installations in a building at any time.
++omogeneous and intuitive operation of the different subsystems.
+Comprehensive guidance for, and support of the operator in case of an alarm.
+/ogging of all activities and powerful reporting possibilities.
+Comfortable navigation through the system via graphical maps or obMect trees.
+Advanced graphics including AutoCAD.
+Automatic andor manual alarm dispatching via email, SMS and pagers.
+Scheduler application for time-based actions.
+Configurable interactions between different subsystems.
+System security based on Microsoft :indows combined login.
+9Mware  :indows +yper9 virtual machine support.
+Data sheet A6V10062415
+Ordering Information Contact your local sales distribution center for 
+detailed information
+14_Danger_management_system.indd   4 07.08.17   17:22

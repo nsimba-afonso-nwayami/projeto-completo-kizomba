@@ -1,0 +1,30 @@
+// Transcrição documental das plantas de 2015; códigos de cadastro, não endereços de campo.
+const adminEquipment=[
+ ['DF-REC','Detector de fumo','Recepção','105',20,40,'Incêndio','Cotas 2,04 e 1,49 no desenho'],
+ ['DF-HALL','Detector de fumo','Hall / corredor','105',54,49,'Incêndio','Cotas 0,83 e 0,60 no desenho'],
+ ['DF-IT','Detector de fumo','Sala I.T.','105',67,29,'Incêndio','Cotas 3,41 e 1,30 no desenho'],
+ ['DF-R01','Detector de fumo','Sala 01','105',22,68,'Incêndio','Cotas 2,33 e 1,24 no desenho'],
+ ['DF-UPS','Detector de fumo','Sala UPS','105',48,68,'Incêndio','Cotas 0,43 e 1,24 no desenho'],
+ ['DF-SEG','Detector de fumo','Sala de segurança','105',73,68,'Incêndio','Cotas 2,25 e 1,52 no desenho'],
+ ['BI-REC','Botão de incêndio','Recepção · junto à saída','105',15,18,'Incêndio','Símbolo de botão de alarme manual'],
+ ['BP-REC','Botão de pânico','Recepção · junto à saída','105',15,24,'Pânico','Cota 1,09 no desenho; junto a módulo AT'],
+ ['BP-HALL','Botão de pânico','Hall · entrada do lado direito','105',82,52,'Pânico','Cota 0,44 no desenho; junto a módulo AT'],
+ ['AT-REC','Módulo / interface','Recepção · junto à saída','105',11,24,'Alarme técnico','Módulo AT representado na planta'],
+ ['AT-WC','Módulo / interface','WC acessível · interface','105',38,38,'Alarme técnico','Interface AT do alarme de chamada do WC'],
+ ['AT-HALL','Módulo / interface','Hall · entrada do lado direito','105',78,52,'Alarme técnico','Módulo AT representado na planta'],
+ ['AD-WC','Alarme de chamada WC acessível','WC acessível','105',42,38,'Assistência','A.D.; ver pormenor do sistema com cordão e reposição'],
+ ['SIR-REC','Sirene óptico-acústica','Recepção','105',29,18,'Incêndio','Símbolo junto ao acesso ao hall do WC'],
+ ['SIR-IT','Sirene óptico-acústica','Sala I.T. · junto ao hall','105',76,39,'Incêndio','Cota 1,73 no desenho'],
+ ['SIR-R01','Sirene óptico-acústica','Sala 01 · junto à porta','105',33,68,'Incêndio','Símbolo do lado da Sala 01'],
+ ['SIR-UPS','Sirene óptico-acústica','Sala UPS · junto à porta','105',36,68,'Incêndio','Símbolo do lado da Sala UPS'],
+ ['SIR-SEG','Sirene óptico-acústica','Sala de segurança · junto à porta','105',76,56,'Incêndio','Símbolo junto ao acesso da sala de segurança'],
+ ['EXT-REC','Extintor portátil','Recepção · junto à saída','105',18,18,'Protecção portátil','Pó químico ABC, capacidade indicada 4 kg; confirmar etiqueta'],
+ ['CAM-01','Câmara de vídeo','Exterior · canto junto à sala I.T.','204',56,13,'CFTV','Primeiro símbolo de câmara exterior'],
+ ['CAM-02','Câmara de vídeo','Exterior · canto junto à sala I.T.','204',58,18,'CFTV','Segundo símbolo de câmara exterior; orientação distinta'],
+ ['INT-SEG','Sensor de intrusão','Sala de segurança · canto','204',56,77,'Intrusão','Detector volumétrico IR/MW indicado na legenda'],
+ ['TERM-SEG','Teclado / terminal','Sala de segurança','204',49,61,'Intrusão','Terminal representado; referência técnica por identificar'],
+ ['RACK-SEG','Bastidor rede segurança','Sala de segurança','204',55,62,'Rede de segurança','Bastidor; saída de rede para área técnica'],
+ ['VMS-SEG','Posto / servidor de gestão vídeo','Sala de segurança · posto de operação','204',85,64,'CFTV','Esquema de servidor e monitores; não é prova de quantidade instalada'],
+ ['RONDAS-SEG','Software de controlo de rondas','Sala de segurança · posto de operação','204',82,79,'Rondas','Software indicado no desenho; sem ligação implementada']
+].map(([suffix,kind,room,layer,x,y,system,documentLocation])=>({id:'',code:'KZ-ADM-'+suffix,kind,area:'Administração',place:'Piso 0 · '+room,layer,x,y,system,documentLocation,physical:'',address:'',model:'',verified:'Por verificar',expected:true,source:'KICO_GE_AB_SEG_'+layer+'.pdf'}));
+const adminLayers=[{id:'105',title:'Incêndio e alarmes técnicos',image:'admin-105.png',date:'13/08/2015'},{id:'204',title:'Intrusão, CFTV e rondas',image:'admin-204.png',date:'14/08/2015'},{id:'702',title:'Corta-fogo e evacuação',image:'admin-702.png',date:'14/08/2015'}];
